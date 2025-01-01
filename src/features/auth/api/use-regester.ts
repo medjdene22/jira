@@ -15,7 +15,7 @@ export const useRegester = () => {
       const response  = await client.api.auth.regester["$post"]({json});
       return await response.json();
     },
-    onSuccess: (data) => {
+    onSuccess: () => {
       router.refresh();
     },
   });

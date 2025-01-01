@@ -6,8 +6,6 @@ import { AUTH_COOKIE } from "./schemas";
 
 
 export const getCurrentUser = async () => {
-    try {
-
     const client = new Client()
         .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT!)
         .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT!);
@@ -20,6 +18,5 @@ export const getCurrentUser = async () => {
     const user = await account.get();
 
     return user
-    } catch (error) {
-    }
+    
 }

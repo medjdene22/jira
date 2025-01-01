@@ -1,8 +1,6 @@
 "use client"
 
-import { FaUser } from "react-icons/fa"
-import Link from "next/link"
-import { CogIcon, Loader, Loader2, LogOut } from "lucide-react"
+import {Loader, LogOut } from "lucide-react"
 
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"

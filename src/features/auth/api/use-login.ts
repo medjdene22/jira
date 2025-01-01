@@ -16,7 +16,7 @@ export const useLogin = () => {
       const response  = await client.api.auth.login["$post"]({json});
       return await response.json();
     },
-    onSuccess: (data) => {
+    onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["current"] });
       router.refresh();
     },

@@ -16,7 +16,7 @@ export const useLogout = () => {
 
       return await response.json();
     },
-    onSuccess: (data) => {
+    onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["current"] });
       router.refresh();
       

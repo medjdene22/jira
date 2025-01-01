@@ -6,6 +6,8 @@ import auth from '@/features/auth/server/route'
 const app = new Hono().basePath('/api')
 
 const routes = app
+
+routes
     .route("/auth", auth);
 
 
