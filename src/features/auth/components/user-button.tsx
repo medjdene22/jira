@@ -35,7 +35,7 @@ export const UserButton = () => {
                     </AvatarFallback>
                 </Avatar>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" side="bottom" className="w-60 rounded-xl bg-white p-2 shadow-md" sideOffset={10}>
+            <DropdownMenuContent align="end" side="bottom" className="w-60 rounded-xl bg-white p-2 shadow-md " sideOffset={10}>
                 <div className="flex items-center flex-col justify-center gap-2 px-2.5 py-4 cursor-pointer">
                     <Avatar className="size-[52px] border border-neutral-300">
                         <AvatarImage src={image || ""} />

@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "@/components/sidebar";
-
+import Navbar from "@/components/navbar";
 
 export default function DashBoardLayout({
   children,
@@ -19,7 +19,7 @@ export default function DashBoardLayout({
 
         <div className="lg:pl-64">
           <div className="mx-auto max-w-screen-2xl h-full w-full">
-            {}
+            <Navbar />
             <main className="h-full py-8 px-6 flex flex-col"> 
               {children}
             </main>

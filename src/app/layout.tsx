@@ -5,6 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 import { cn } from "@/lib/utils";
 import "./globals.css";
 import { Providers } from "@/components/query-provider";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,6 +24,7 @@ export default function RootLayout({
         className={cn(inter.className, "antialiased min-h-screen")}
       >
         <Providers>
+          <Toaster />
           {children}
         </Providers>
       </body>
