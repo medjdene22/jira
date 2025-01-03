@@ -114,6 +114,9 @@ const app = new Hono()
             uploadedImageUrl = `data:image/png;base64,${Buffer.from(arrayBuffer).toString("base64")}`;
         } else uploadedImageUrl = image;
 
+        if (!uploadedImageUrl) uploadedImageUrl="";
+        console.log(uploadedImageUrl);
+
         const workspace = await databases.updateDocument(
             DATABASE_ID,
             WORKSPACE_ID,
